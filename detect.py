@@ -157,7 +157,7 @@ def run(weights=ROOT / 'yolov5s.pt',  # model.pt path(s)
                 prices = {"banana" : 1, "apple": 4, "broccoli": 3, "cauliflower":5,"tomato":1, "banana tip":1}
                 total_price = 0
 
-                with open('CSVFILE.csv', 'a', newline='') as f_object:
+                with open('CSVFILE.csv', 'w+', newline='') as f_object:
                       writer_object = writer(f_object)
                       writer_object.writerow(['fruit', 'qty', 'price'])
                       f_object.close()
